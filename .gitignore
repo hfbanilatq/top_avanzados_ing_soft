@@ -1,0 +1,69 @@
+# Ignorar archivos de sistema de Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignorar archivos de sistema de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignorar archivos de sistema de Linux
+*~
+
+# Archivos y carpetas de compilación
+/out/
+build/
+target/
+*.class
+*.log
+
+# Archivos de configuración de IntelliJ IDEA
+## .iml  files ##
+*.iml
+
+## .ipr  files ##
+*.ipr
+
+## Module output folders ##
+out/
+
+## IDEA's project workspace file ##
+workspace.xml
+.idea/
+
+# Ignorar cualquier archivo o carpeta que comience con ".idea"
+.idea/**
+.idea/*
+
+# Ignorar archivos Maven
+.mvn/
+!**/src/main/**
+!**/src/test/**
+
+# Ignorar archivos Gradle
+.gradle/
+build/
+
+# Ignorar archivos de configuración y logs
+*.log
+*.lock
+*.log.*
+*.swp
+
+# Ignorar Intellij IDEA en todas las carpetas de proyectos
+**/.idea/
+**/*.iml
+**/.idea/*
+
+# Otras ignorancias específicas 
+*__pycache__/
+*.py[cod]
+
+# Java-specific ignores
+*.war
+*.ear
+
+# Ignorar archivos de sistema que no deben ser subidos
+!.gitattributes
+!.gitignore
