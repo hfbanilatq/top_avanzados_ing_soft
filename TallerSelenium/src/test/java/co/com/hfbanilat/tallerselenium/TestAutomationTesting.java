@@ -15,7 +15,7 @@ import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class RetoUno {
+public class TestAutomationTesting {
     WebDriver driver;
     WebDriverWait wait;
 
