@@ -1,5 +1,5 @@
 // src/pages/PokemonDetailsPage.ts
-import { Locator, Page } from "@playwright/test";
+import { expect, Locator, Page } from "@playwright/test";
 import { Pokemon } from "../models/Pokemon";
 
 export class PokemonDetailsPage {
@@ -66,6 +66,11 @@ export class PokemonDetailsPage {
     }
 
     await this.page.screenshot({ path: `../screenshots/${pokemon.name}.png` });
+  }
+
+  async validateEvsInZero() {
+    const totalEVText = this.page.locator('//div[@class="col evcol"]//div[@class="totalev"]//em');
+    await expect(totalEVText).toHaveText('0');
   }
 
   async returnToTeam() {

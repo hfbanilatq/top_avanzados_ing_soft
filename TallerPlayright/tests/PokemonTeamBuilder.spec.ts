@@ -49,6 +49,7 @@ test("Create and validate new team", async ({ page }) => {
   for (const pokemon of teamData.pokemon) {
     await teamListPage.addPokemon();
     await pokemonDetailsPage.addPokemon(pokemon);
+    await pokemonDetailsPage.validateEvsInZero();
     await pokemonDetailsPage.returnToTeam();
   }
 
