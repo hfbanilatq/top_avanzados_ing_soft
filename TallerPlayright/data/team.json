@@ -1,0 +1,43 @@
+{
+    "generation": 9,
+    "tier": "Ubers",
+    "pokemon": [
+      {
+        "name": "Gliscor",
+        "item": "Toxic Orb",
+        "moves": ["Spikes", "Earthquake", "Toxic", "Protect"],
+        "evs": {"hp": 252, "spd": 232, "spe": 24}
+      },
+      {
+        "name": "Zacian-Crowned",
+        "item": "Rusted Sword",
+        "moves": ["Swords Dance", "Behemoth Blade", "Play Rough", "Wild Charge"],
+        "evs": {"atk": 252, "spd": 4, "spe": 252}
+      },
+      {
+        "name": "Koraidon",
+        "item": "Choice Scarf",
+        "moves": ["Low Kick", "Dragon Claw", "U-turn", "Flare Blitz"],
+        "evs": {"atk": 252, "def": 4, "spe": 252}
+      },
+      {
+        "name": "Arceus",
+        "item": "Heavy-Duty Boots",
+        "moves": ["Swords Dance", "Extreme Speed", "Shadow Claw", "Taunt"],
+        "evs": {"hp": 200, "atk": 252, "spe": 56}
+      },
+      {
+        "name": "Miraidon",
+        "item": "Choice Specs",
+        "moves": ["Electro Drift", "Draco Meteor", "Volt Switch", "U-turn"],
+        "evs": {"spa": 252, "spd": 4, "spe": 252}
+      },
+      {
+        "name": "Toxapex",
+        "item": "Rocky Helmet",
+        "moves": ["Toxic", "Recover", "Haze", "Baneful Bunker"],
+        "evs": {"hp": 252, "def": 224, "spd": 32}
+      }
+    ]
+  }
+  
