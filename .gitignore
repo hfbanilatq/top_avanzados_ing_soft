@@ -67,3 +67,9 @@ build/
 # Ignorar archivos de sistema que no deben ser subidos
 !.gitattributes
 !.gitignore
+
+**/node_modules/
+**/test-results/
+**/playwright-report/
+**/blob-report/
+**/playwright/.cache/
