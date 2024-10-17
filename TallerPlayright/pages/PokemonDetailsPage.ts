@@ -65,7 +65,7 @@ export class PokemonDetailsPage {
       await statInput.pressSequentially(value.toString());
     }
 
-    await this.page.screenshot({ path: `../screenshots/${pokemon.name}.png` });
+    await this.page.screenshot({ path: `./screenshots/${pokemon.name}.png` });
   }
 
   async validateEvsInZero() {

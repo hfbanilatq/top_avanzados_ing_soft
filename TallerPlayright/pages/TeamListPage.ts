@@ -31,7 +31,7 @@ export class TeamListPage {
       `Your team is valid for [Gen ${generation}] ${tier}.`
     );
     await this.page.screenshot({
-      path: `../screenshots/team_${tier}_gen${generation}.png`,
+      path: `./screenshots/team_${tier}_gen${generation}.png`,
     });
   }
 }
