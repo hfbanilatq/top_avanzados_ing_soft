@@ -1,5 +1,5 @@
 // src/pages/TeamListPage.ts
-import { Locator, Page, expect } from '@playwright/test';
+import { Locator, Page, expect } from "@playwright/test";
 
 export class TeamListPage {
   readonly page: Page;
@@ -8,8 +8,12 @@ export class TeamListPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.addPokemonButton = this.page.locator('//ol[@class="teamchart"]//li//button[@name="addPokemon"]');
-    this.validateTeamButton = this.page.locator('//ol[@class="teamchart"]//li//button[@name="validate"]');
+    this.addPokemonButton = this.page.locator(
+      '//ol[@class="teamchart"]//li//button[@name="addPokemon"]'
+    );
+    this.validateTeamButton = this.page.locator(
+      '//ol[@class="teamchart"]//li//button[@name="validate"]'
+    );
   }
 
   async addPokemon() {
@@ -19,10 +23,15 @@ export class TeamListPage {
   async validateTeam(generation: number, tier: string) {
     await this.validateTeamButton.click();
 
-    const validationText = this.page.locator('(//div[@class="ps-overlay"]//div[@class="ps-popup"]//p)[1]');
-    await validationText.waitFor({ state: 'visible', timeout: 10000 }); 
-    await expect(validationText).toContainText(`Your team is valid for [Gen ${generation}] ${tier}.`);
-    await this.page.screenshot({ path: `../screenshots/team_${tier}_gen${generation}.png` });
-    
+    const validationText = this.page.locator(
+      '(//div[@class="ps-overlay"]//div[@class="ps-popup"]//p)[1]'
+    );
+    await validationText.waitFor({ state: "visible", timeout: 10000 });
+    await expect(validationText).toContainText(
+      `Your team is valid for [Gen ${generation}] ${tier}.`
+    );
+    await this.page.screenshot({
+      path: `../screenshots/team_${tier}_gen${generation}.png`,
+    });
   }
 }
