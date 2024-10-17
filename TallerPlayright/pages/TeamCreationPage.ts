@@ -20,7 +20,7 @@ export class TeamCreationPage {
       '//ul[@class="popupmenu"]//li//input[@placeholder="Search formats"]'
     );
     this.gen9UbersButton = this.page.locator(
-      `//span[@name="formats"]//details[@section="S/V Singles"]//button[@value="gen${this.gen}${tiertLowerCase}"]`
+      `//button[@value="gen${this.gen}${tiertLowerCase}"]`
     );
   }
 
