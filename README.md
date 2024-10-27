@@ -21,7 +21,6 @@ Página web: https://www.saucedemo.com/
 - Reto Tab: [Requisito](https://drive.google.com/file/d/1lYnalF_gNhuNdGp2WkvcAdzCY5jQ0_uH/view)  
   Página web: https://automationtesting.co.uk/browserTabs.html  
 
-
 ## Taller 2
 
 Este taller se realiza usando **Playwright** con **POM (Page Object Model)** y **Data Driven Testing**, y se encuentra en la carpeta `TallerPlaywright`.
@@ -62,7 +61,7 @@ Para ejecutar las pruebas, asegúrate de tener **Node.js** instalado y sigue est
 
 3. **Ejecuta en modo ui o headed**:
    - **Headless**: Para un rendimiento más rápido, sin interfaz gráfica.
-   
+     
      ```bash
      npx playwright test --ui
      ```
@@ -72,3 +71,29 @@ Para ejecutar las pruebas, asegúrate de tener **Node.js** instalado y sigue est
      ```bash
      npx playwright test --headed
      ```
+
+## Taller 3 - Reto 1 y Reto 2
+
+El contenido del Taller 3 se encuentra en la carpeta `TallerRest`.
+
+- **Taller 3 - Reto 1**: Se implementaron dos soluciones para interactuar con una API de librería.
+  - **BookApiRestTest**: Utiliza únicamente las APIs REST para probar la creación, autenticación y eliminación de usuarios.
+  - **BookApiWithSeleniumTest**: Utiliza Selenium para probar las interacciones de usuario con la interfaz web de la librería.
+
+- **Taller 3 - Reto 2**: Se utilizaron las APIs REST para interactuar con las APIs públicas de NASA. Es necesario crear un archivo `.env` con la clave API obtenida desde la página de NASA. Un archivo `.env-example` se proporciona como referencia.
+
+## Taller 4
+
+El contenido del Taller 4 se encuentra en la carpeta `TallerCICD`.
+
+- **Taller 4**: Este taller se enfoca en configurar pipelines de CI/CD para pruebas automatizadas usando GitHub Actions. El repositorio principal de la aplicación es [todoism](https://github.com/hfbanilatq/todoism). El pipeline de CI/CD ejecuta las pruebas de Playwright contra la aplicación Python hospedada en este repositorio.
+
+### Estructura
+
+- `TallerRest`:
+  - Contiene las implementaciones para Taller 3 - Reto 1 y Reto 2.
+  - **BookApiRestTest** y **BookApiWithSeleniumTest** están incluidas para el Reto 1.
+
+- `TallerCICD`:
+  - Contiene la suite de pruebas de Playwright para el Taller 4.
+  - Las pruebas de Playwright están configuradas para ejecutarse contra el repositorio `todoism` como parte del proceso de CI/CD.
